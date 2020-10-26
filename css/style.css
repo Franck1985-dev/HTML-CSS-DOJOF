@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+}
+html,body,ul,ol,li,h1,h2,h3,h4,h5,h6,div{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url();
+    background-color: rgb(50, 51, 51);
+    font-family:"lucida grande";
+
+}
+.header {
+    overflow: hidden;
+    background-color:rgb(11, 12, 11);
+    padding: 10px 10px; 
+}
+.header-right li {
+	float: center;
+	text-align: center;
+	text-decoration: solid;
+	margin-top:-80px;
+}
+.logo{
+	background-image: url();
+	margin-right: 10px;
+	padding: 0.25rem;
+}
+nav{
+	display: block;
+    background-color: #55acee;
+	justify-content: space-around;
+	align-items: center;
+	width: 1349px;
+	height: 130px;
+	min-height: 5vh;
+	font-family: Poppins ,sans-serif;
+	position: sticky;
+	top: 0;
+
+}
+.header-right a{
+    padding: 30px;
+    float: right;
+}
+.lessons{
+    float: center;
+    margin-right: 40px;
+}
+.heading h1{
+    text-transform: uppercase;
+}
+a{
+    display: flex;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.top-wrapper{
+    padding: 180px 0 100px 0;
+    background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
+    background-size: cover;
+    color: wheat;
+    text-align: center;
+}
+.top-wrapper h1{
+	opacity: 0.7;
+	font-size: 45px;
+	letter-spacing: 5px;
+	margin-bottom: 10px;
+}
+
+.top-wrapper p{
+	opacity: 0.7;
+	margin-bottom: 3px;
+}
+.btn-wrapper{
+    margin: 20px 0;
+    text-align: center;
+}
+.btn-wrapper p{
+	margin-right: 10px 0;
+}
+.signup{
+    background-color:#239b76;
+}
+.facebook{
+    background-color:#3b5998;
+    margin-right: 10px;
+}
+.twitter{
+    background-color: #55acee;
+}
+.btn{
+    padding: 12px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 14px;
+}
+.btn:hover{
+    opacity: 1;
+}
+.fa{
+    margin-right: 10px;
+}
+.nav-links li{
+	float: right;
+	list-style: none;
+	margin-right: 30px;
+}
+.nav-links a{
+	color:rgb(20, 19, 19);
+	text-decoration: none;
+	letter-spacing: 0px;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 20px;
+	margin-right: 10px;
+}
+.burger{
+    float: right;
+}
+
+.burger div{
+	background-color: black;
+	width: 20px;
+	height: 4px;
+	margin: 5px;
+	transition: all 0.5s ease;
+
+}
+@media screen and (max-width: 1024px){
+	.nav-links{
+		width: 60%;
+	}
+}
+@media screen and (max-width: 768px) {
+	body{
+		overflow-x:hidden ;
+	}
+	.nav-links {
+		position: absolute;
+		right: o;
+		height: 92vh;
+		top: 8vh;
+		background-color: #5d4954;
+		display: flex;
+		flex-direction: column;
+		align-items: right;
+		width: 50%;
+		transform: translateX(100%);
+		transition: all 0.5s ease-in;
+	}
+
+ 
+
+  .nav-links li{
+	opacity: 0;
+
+ }
+ .burger {
+	display: block;
+ }
+} 
+.nav-active{
+	transform: translateX(0%);
+}
+
+@keyframes navlinkfade {
+	form {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+
+	to{
+		opacity: 1;
+		transform: 0;
+	}
+}
+.toggle .line1{
+	transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+	opacity: 0;
+}
+.toggle .line3 {
+	transform: rotate(+45deg) translate(-5px, -6px);
+}
+.text-contents{
+    color: antiquewhite;
+}
+h1{
+    color: beige;
+}
+h2{
+    color: whitesmoke;
+
+}
+h3{
+    color: aliceblue;
+}
+.lesson-wrapper p{
+    color: aliceblue;
+}
+form{
+    text-align: center;
+    color:white;
+
+}
+p{
+	text-align: center;
+	color: white;
+}
+footer{
+    background-color: #55acee;
+    background-size: 100px;
+	padding: 50px;
+
+	
+} 
+footer a{
+    text-align: right;
+    float: right;
+    margin-bottom: 0px;
+    text-align: center;
+    margin-right: 40px;
+    background-size: 0px;
+    position: sticky;
+    color: black;
+} 
+footer p{
+    float:none;
+    opacity: 0.7;
+}
